@@ -1,0 +1,56 @@
+<script>
+    var pegawai = "Ridwan";
+    var jabatan = "Manager";
+    var status = "Menikah";
+
+    if(jabatan == "Manager"){
+        gajiPokok = 15000000;
+    }else if(jabatan == "Asisten manager"){
+        gajiPokok = 10000000;
+    }else{
+        gajiPokok = 5000000;
+    }
+    
+tunjab = gajiPokok*0.15;
+bpjs = gajiPokok*0.1;
+menikah = gajiPokok*0.2;
+
+
+if(status == "Menikah"){
+    statusTunjangan = "Mendapat tunjangan menikah";
+}else{
+    statusTunjangan = "Tidak mendapat tunjangan menikah";
+}
+if(status == "Menikah"){
+    gajiBersih = gajiPokok - tunjab - bpjs - menikah;
+}else{
+    gajiBersih = gajiPokok - tunjab - bpjs;
+}
+
+    document.write("<table border='1' align='center' cellpadding='5'>",
+        "<thead>",
+            "<th colspan='4' bgcolor='yellow'>DATA PEGAWAI</th>",
+        "</thead>",
+        "<tbody>",
+            "<tr bgcolor='grey'>",
+                "<th>NAMA PEGAWAI</th>",
+                "<th>JABATAN</th>",
+                "<th>STATUS</th>",
+                "<th>GAJI</th>",
+            "</tr>",
+            "<tr>",
+                "<td>",pegawai,"</td>",
+                "<td>",jabatan,"</td>",
+                "<td>",status,"</td>",
+                "<td>",gajiPokok,"</td>",
+            "</tr>",
+        "<tfoot>",
+            "<tr>",
+                "<td>Gaji Bersih</td>",
+                "<td>",statusTunjangan,"</td>",
+                "<td colspan='2' align='center'>",gajiBersih,"</td>",
+            "</tr>",
+        "</tfoot>",
+        "</tbody>",
+    "</table>");
+</script>
