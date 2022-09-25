@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal hewan dan suaranya</title>
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2.custom/jquery-ui.css">
+    <script src="js/jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+    <style>
+    *{
+        background-color: khaki;
+    }
+
+        div.hewan {
+      width: 125px;
+      height: 125px;
+      border: 1px solid #000;
+    }
+    div{
+        color: khaki;
+    }
+    h1{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1>MENGENAL HEWAN DAN SUARANYA</h1>
+    <div id="accordion">
+        <h3>Hewan Ternak</h3>
+        <div>
+            <div class="hewan" id="sapi" style="text-align: center; ">SAPI</div>
+            <div class="hewan" id="kambing" style="text-align: center;">KAMBING</div>
+            <div class="hewan" id="ayam" style="text-align: center;">AYAM</div>
+            <div class="hewan" id="babi" style="text-align: center;" >BABI</div>
+        </div>
+        <h3>Hewan Buas</h3>
+        <div>
+            <div class="hewan" id="singa" style="text-align: center;">SINGA</div>
+            <div class="hewan" id="harimau" style="text-align: center;">HARIMAU</div>
+            <div class="hewan" id="serigala" style="text-align: center;">SERIGALA</div>
+            <div class="hewan" id="beruang" style="text-align: center;">BERUANG</div>
+        </div>
+        <h3>Unggas</h3>
+        <div>
+            <div class="hewan" id="bebek" style="text-align: center;">BEBEK</div>
+            <div class="hewan" id="angsa" style="text-align: center;">ANGSA</div>
+            <div class="hewan" id="kakatua" style="text-align: center;">KAKATUA</div>
+            <div class="hewan" id="beo" style="text-align: center;">BEO</div>
+        </div>
+      </div>
+</body>
+<script>
+    $( function() {
+    $( "#accordion" ).accordion();
+    } );
+
+    $("#sapi").css("background-color","brown");      
+    $("#sapi").click(function () {
+        $(this).css({
+            background: "url('image/sapi.jpg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/sapi.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#kambing").css("background-color","brown");      
+    $("#kambing").click(function () {
+        $(this).css({
+            background: "url('image/kambing.jpg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/kambing.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#singa").css("background-color","red");      
+    $("#singa").click(function () {
+        $(this).css({
+            background: "url('image/singa.jpg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/singa.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#harimau").css("background-color","red");      
+    $("#harimau").click(function () {
+        $(this).css({
+            background: "url('image/harimau.jpg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/harimau.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#ayam").css("background-color","brown");      
+    $("#ayam").click(function () {
+        $(this).css({
+            background: "url('image/ayam.jpg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/ayamberkokok.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#babi").css("background-color","brown");      
+    $("#babi").click(function () {
+        $(this).css({
+            background: "url('image/babi.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/babi.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#serigala").css("background-color","red");      
+    $("#serigala").click(function () {
+        $(this).css({
+            background: "url('image/srigala.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/serigala.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#beruang").css("background-color","red");      
+    $("#beruang").click(function () {
+        $(this).css({
+            background: "url('image/beruang.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/beruang.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#bebek").css("background-color","blue");      
+    $("#bebek").click(function () {
+        $(this).css({
+            background: "url('image/bebek.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/bebek.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#angsa").css("background-color","blue");      
+    $("#angsa").click(function () {
+        $(this).css({
+            background: "url('image/angsa.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/angsa.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });    
+    $("#beo").css("background-color","blue");      
+    $("#beo").click(function () {
+        $(this).css({
+            background: "url('image/beo.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/beo.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+    $("#kakatua").css("background-color","blue");      
+    $("#kakatua").click(function () {
+        $(this).css({
+            background: "url('image/kakatua.jpeg')"
+        });
+        $("<audio></audio>").attr({
+            'src': "audio/kakatua.mp3",
+            'volume': 0.4,
+            'autoplay': "autoplay"
+        }).appendTo("body");
+    });
+</script>
+</html>
